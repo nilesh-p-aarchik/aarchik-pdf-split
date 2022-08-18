@@ -45,7 +45,7 @@ switch (process.env.NODE_ENV) {
       connection.development.username,
       connection.development.password, {
       host: connection.development.host,
-      dialect: connection.development.dialect,
+      dialect: connection.development.dialect, 
       pool: {
         max: 5,
         min: 0,
