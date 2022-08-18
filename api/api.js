@@ -11,7 +11,9 @@ require('dotenv').config();
 
 const config = require('../config/');
 const dbService = require('./services/db.service');
-const environment = "development";
+// const environment = "development";
+const environment = process.env.NODE_ENV;
+console.log(environment,"environment")
 
 const app = express();
 app.use(fileUpload());
