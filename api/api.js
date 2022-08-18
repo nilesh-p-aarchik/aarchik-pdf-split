@@ -9,7 +9,7 @@ const path = require('path');
 const fileUpload = require('express-fileupload')
 require('dotenv').config();
 
-const config = require('../config/');
+const config = require('../config/'); 
 const dbService = require('./services/db.service');
 // const environment = "development";
 const environment = process.env.NODE_ENV;

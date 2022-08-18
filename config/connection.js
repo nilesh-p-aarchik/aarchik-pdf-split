@@ -1,4 +1,3 @@
-
 // const development = {
 //     database: 'pdfsplit',
 //     username: 'postgres',
@@ -18,5 +17,3 @@ const development = {
 module.exports = {
     development 
 };
-  
-  

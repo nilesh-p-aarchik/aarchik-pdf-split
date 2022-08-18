@@ -52,7 +52,7 @@ switch (process.env.NODE_ENV) {
         idle: 10000,
       },
       dialectOptions: {
-        ssl: true,
+        ssl: true, 
         rejectUnauthorized: false   
       }
     // storage: path.join(process.cwd(), 'db', 'database.sqlite'),
