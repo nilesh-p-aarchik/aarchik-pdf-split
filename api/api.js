@@ -21,7 +21,9 @@ app.use(fileUpload());
 const server = http.Server(app)
 
 const mappedOpenRoutes = mapRoutes(config.Routes, 'api/controllers/');
-
+app.get("", (req, res) => {
+  res.json("welcome");
+ });
 
 const DB = dbService(environment, config.migrate).start();
 
