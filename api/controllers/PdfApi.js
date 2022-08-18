@@ -211,7 +211,7 @@ const PdfApi = () => {
             return res.status(error.status).json(error.error);
         }
     };
-    const get = async (req, res) => {
+    const get = async (req, res) => { 
         
         let setResponse = null;
         try { 
