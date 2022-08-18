@@ -15,7 +15,7 @@ const dbService = require('./services/db.service');
 const environment = process.env.NODE_ENV; 
 console.log(environment,"environment")
 
-const app = express();
+const app = express(); 
 app.use(fileUpload());
 
 const server = http.Server(app)
