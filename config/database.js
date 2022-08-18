@@ -40,12 +40,29 @@ switch (process.env.NODE_ENV) {
     );
     break;
   default:
+    // database = new Sequelize(
+    //   connection.development.database,
+    //   connection.development.username,
+    //   connection.development.password, {
+    //   host: connection.development.host,
+    //   dialect: connection.development.dialect, 
+    //   pool: {
+    //     max: 5,
+    //     min: 0,
+    //     idle: 10000,
+    //   },
+    //   dialectOptions: {
+    //     ssl: true,
+    //     rejectUnauthorized: false   
+    //   }
+      
+    // // storage: path.join(process.cwd(), 'db', 'database.sqlite'),
+    // // logging: true,
+    // }
+   
+    // );
     database = new Sequelize(
-      connection.development.database,
-      connection.development.username,
-      connection.development.password, {
-      host: connection.development.host,
-      dialect: connection.development.dialect, 
+      connection.development.database,{
       pool: {
         max: 5,
         min: 0,
@@ -55,10 +72,13 @@ switch (process.env.NODE_ENV) {
         ssl: true,
         rejectUnauthorized: false   
       }
+      
     // storage: path.join(process.cwd(), 'db', 'database.sqlite'),
     // logging: true,
     }
+   
     );
+    
 }
 
 module.exports = database;
