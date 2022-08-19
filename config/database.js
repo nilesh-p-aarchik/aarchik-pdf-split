@@ -73,8 +73,8 @@ switch (process.env.NODE_ENV) {
        // rejectUnauthorized: false   
       },
       
-    storage: path.join(process.cwd(), 'db', 'database.sqlite'),
-    logging: true,
+    //storage: path.join(process.cwd(), 'db', 'database.sqlite'),
+    //logging: true,
     }
    
     );
