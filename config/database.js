@@ -74,7 +74,7 @@ switch (process.env.NODE_ENV) {
       },
       
     //storage: path.join(process.cwd(), 'db', 'database.sqlite'),
-    //logging: true,
+    logging: false,
     }
    
     );
