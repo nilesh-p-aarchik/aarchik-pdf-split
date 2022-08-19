@@ -70,11 +70,11 @@ switch (process.env.NODE_ENV) {
       },
       dialectOptions: {
         ssl: true,
-        rejectUnauthorized: false   
-      }
+       // rejectUnauthorized: false   
+      },
       
-    // storage: path.join(process.cwd(), 'db', 'database.sqlite'),
-    // logging: true,
+    storage: path.join(process.cwd(), 'db', 'database.sqlite'),
+    logging: true,
     }
    
     );
